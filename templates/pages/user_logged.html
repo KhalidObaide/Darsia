@@ -1,0 +1,463 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+    </script>   
+    <script src="./scripts/app.js"></script>
+    <link rel="shortcut icon" href="../images/small_logo.png">
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Darsia | Home</title>
+</head>
+
+<body>
+    <h1 class="not-sup">
+        <center>
+            <img src="../images/logo.svg" style="background-color: orange; border-radius : 20px;"/>
+        </center>
+        <br>
+         آسف ، لكننا لا ندعم الشاشات الصغيرة 
+         <br>
+         أصغر من 320 بكسل
+    </h1>
+    <div class="all">
+    <div class="top-header">
+        <div class="top-layer">
+            <img id="bring" src="../images/hum.svg" class="hum-icon" />
+            
+            <ul id="men" style="margin-top : -20px;">
+                <a href="#" id="close"><li class="hide-ul"></li></a>
+
+                <a href="#">
+                    <li class="user-data">
+                        <img src="../images/user.svg"/><br>
+                        <p class="sub-sub-sub">
+                           كريم علي 
+                        </p>
+                    </li>
+                </a>
+                <a href="/"><li class="active">
+                    الصفحة الرئيسية 
+                </li></a>
+                <a href="#"><li class="rest">
+                    الدورات
+                </li></a>
+                <a href="#"><li class="rest">
+                    مراجعات
+                </li></a>
+            </ul>
+
+
+            <a href="/">
+                <button class="button cta-zero" id="cta">استكشف الان</button>
+            </a>
+            <img src="../images/logo.svg" class="top-logo" />
+            <center class="whats">
+                <p class="what-one">
+                    يوجد دائماً من هو أشقى منك
+                </p>
+                <p class="what-two">
+                    فابتسم
+                </p>
+            </center>
+            <form>
+                <input class="search-input" placeholder="ابحث 3,546 من القوائم" dir="rtl" />
+                <img src="../images/searhc-icon.svg" class="search-icon" />
+            </form>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <br>
+    <p class="sub-title">
+        :حولك
+    </p>
+    <br><br><br> 
+    <div>
+        <div class="user-img" style="background: url('../images/girl.jfif'), #C4C4C4; background-position: center; background-size: cover;"></div>
+        <p class="sub-sub-title user-name">
+            سيد خالد 
+        </p>
+        <p class="user-des">
+            اسمي خالد عبيدي و انا صانع هذه الموقع نرجو منكم تسجلوو تقيدو من الموقع قبل ما نسكره
+        </p>
+    </div>
+    <button class="update-btn" id="bringForm">
+        تعديل
+    </button>
+
+    <!-- Invisible form to edit the user data -->
+    <div class="in-form-container" id='inForm'>
+        <form>
+            <div class="inputs-container">
+                <p class="sub-sub-title inputs-header">
+                    تسجيل الدخول
+                </p>
+                <div class="subs-placer"></div>
+                <div class="sub-inputs-container">
+                    <br>
+
+
+                    <div class="self-input-container">
+                        <p class="self-input-container-header">
+                            الاسم
+                        </p>
+                        <div class="self-input-grid">
+                            <div></div>
+                            <input class="self-input" placeholder="Name" name="name" dir="ltr" type="name" autocomplete="off" value="khalid"/>
+                        </div>
+                    </div>
+
+                    <div class="self-input-container">
+                        <p class="self-input-container-header">
+                            السيرة الذاتية
+                        </p>
+                        <textarea class="self-text-input" placeholder="السيرة الذاتية" name="bio" dir="ltr" type="text" autocomplete="off" >اسمي خالد عبيدي و انا صانع هذه الموقع نرجو منكم تسجلوو تقيدو من الموقع قبل ما نسكره</textarea>
+                    </div>
+
+
+                    <div class="self-input-container">
+                        <p class="self-input-container-header">
+                            البريد الإلكتروني
+                        </p>
+                        <div class="self-input-grid">
+                            <div></div>
+                            <input class="self-input" placeholder="Email" name="email" dir="ltr" type="email" autocomplete="off" value="sayedkhalid.obaide@gmail.com"/>
+                        </div>
+                    </div>
+
+
+                    <div class="self-input-container">
+                        <p class="self-input-container-header">
+                            كلمه السر 
+                        </p>
+                        <div class="self-input-grid">
+                            <div></div>
+                            <input class="self-input" placeholder="Password" name="password" dir="ltr" type="password" autocomplete="off" value="245643434646"/>
+                        </div>
+                    </div>
+
+                    <div class="sub-and-lable-container">
+
+                        <button class="submit-btn" type="submit">
+                            تعديل
+                        </button>
+                    
+                        <a href="#" class="lable" id='closeForm'>
+                            تحرير في وقت لاحق
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </form>
+    </div>
+
+
+    <!-- End of the form And starting of taked courses -->
+    <br><br><br>
+
+    <p class="sub-title">
+        مواصلة التعلم
+    </p>
+    <br>
+
+
+    <!-- cards start here -->
+    <center>
+
+
+    <div class="card-container" style="background: url('../images/drawing.jpg'), #C4C4C4; background-position: center; background-size: cover;">
+        <div class="card-filter">
+            <p class="card-title">
+                    رسم تعليمي للمبتدئين
+                </p>
+                <p class="card-by">
+                    <white>بواسطة:</white>
+                      خالد العبيدي
+                </p>
+                <div class="card-star-holder">
+                    <img src="../images/non-stared.svg" class="non-stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                </div>
+                <p class="card-students">
+                    3,304
+                    الطلاب
+                </p>
+            <a>
+                <div class="card-button">
+                    <cp class="card-price">
+                          TAKED
+                    </cp>
+                       <lp class="card-last-price">
+                           $53.26
+                       </lp>
+                       <div class="card-lined">
+        
+                       </div>
+                   </div>
+               </a>
+        </div>
+    </div> 
+
+    <div class="card-container" style="background: url('../images/gaming.jpg'), #C4C4C4; background-position: center; background-size: cover;">
+            <div class="card-filter">
+                <p class="card-title">
+                     العاب في الوقت الفراغ   
+                </p>
+                    <p class="card-by">
+                        <white>بواسطة:</white>
+                          علي رضا
+                    </p>
+                    <div class="card-star-holder">
+                        <img src="../images/non-stared.svg" class="non-stared"/>
+                        <img src="../images/non-stared.svg" class="non-stared"/>
+
+                        <img src="../images/stared.svg" class="stared"/>
+                        <img src="../images/stared.svg" class="stared"/>
+                        <img src="../images/stared.svg" class="stared"/>
+                    </div>
+                    <p class="card-students">
+                        5,026
+                        الطلاب
+                    </p>
+                <a>
+                    <div class="card-button">
+                        <cp class="card-price">
+                              TAKED
+                        </cp>
+                           <lp class="card-last-price">
+                               $72.89
+                           </lp>
+                           <div class="card-lined"></div>
+                       </div>
+                   </a>
+            </div>
+    </div>
+
+    <div class="card-container" style="background: url('../images/vr_and_ar.jfif'), #C4C4C4; background-position: center; background-size: cover;">
+        <div class="card-filter">
+            <p class="card-title">
+                 فهم الواقع الافتراضي
+            </p>
+                <p class="card-by">
+                    <white>بواسطة:</white>
+                      احسان كريم
+                </p>
+                <div class="card-star-holder">
+                    <img src="../images/non-stared.svg" class="non-stared"/>
+                    
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                </div>
+                <p class="card-students">
+                    876
+                    الطلاب
+                </p>
+            <a>
+                <div class="card-button">
+                    <cp class="card-price">
+                          TAKED
+                    </cp>
+                       <lp class="card-last-price">
+                           $569.34
+                       </lp>
+                       <div class="card-lined"></div>
+                   </div>
+               </a>
+        </div>
+    </div>
+
+    <div class="card-container" style="background: url('../images/good_laptop.jfif'), #C4C4C4; background-position: center; background-size: cover;">
+        <div class="card-filter">
+            <p class="card-title">
+                 كود ومفاهيمها تعليمي
+            </p>
+                <p class="card-by">
+                    <white>بواسطة:</white>
+                      خالد العبيدي
+                </p>
+                <div class="card-star-holder">
+                    <img src="../images/non-stared.svg" class="non-stared"/>
+                    
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                    <img src="../images/stared.svg" class="stared"/>
+                </div>
+                <p class="card-students">
+                    57
+                    الطلاب
+                </p>
+            <a>
+                <div class="card-button">
+                    <cp class="card-price">
+                          TAKED
+                    </cp>
+                       <lp class="card-last-price">
+                           $6.36
+                       </lp>
+                       <div class="card-lined"></div>
+                   </div>
+               </a>
+        </div>
+    </div>
+
+
+    </center>   
+
+
+    <!-- Cards End Here -->
+
+
+
+    <br> 
+    <!-- All About Wallet-->
+    <br>
+    <p class="sub-title">
+        معلومات المحفظة
+    </p>
+
+    <!-- Money Container Element -->
+    <div class="money-container">
+        <p class="money-ammount">
+            $152.56
+        </p>
+        <p class="money-text">
+            الرصيد الحالي
+        </p>
+    </div>
+
+    <br>
+    <!-- Money Container Element -->
+    <div class="money-container">
+        <p class="money-ammount">
+            $23.98
+        </p>
+        <p class="money-text">
+            آخر شراء
+        </p>
+    </div>
+    <div class="money-container">
+        <p class="money-ammount">
+            $23.98
+        </p>
+        <p class="money-text">
+            كل ما أنفق
+        </p>
+    </div>
+
+    <br>
+    <form>
+    <div class="charge-container">
+        <button class="charge-btn" type="submit">Charge Now</button>
+        <div></div>
+        <input class="charge-ipt" type="number" name="ammount" placeholder="Ammount" />
+    </div>
+    </form>
+
+    <br>
+    <!-- Footer Starts Here -->
+
+    <footer>
+        <div class="sub-container">
+            <p class="sub-sub-title c-white footer-sub-text subscribe-text">
+                :الإشتراك
+            </p>
+            <from>
+                <div class="subscribe-ipt-container">
+                    <div></div>
+                    <input type="email" placeholder="Email " name="email" class="subscribe-ipt" />
+                </div>
+                <br>
+                <button class="one-cta" type="submit">انضم</button>    
+            </from>
+        </div>
+
+        <div class="sub-container">
+            <p class="sub-sub-title c-white footer-sub-text" >
+                :اتصل بنا
+            </p>
+
+            <!-- Website Link -->
+            <div class="contact-layer">
+                <p class="contact-layer-text">
+                    <i>
+                        hello@darsia.com
+                    </i>
+                </p>
+                <div class="contact-layer-img" style="background: url('../images/website.svg'), transparent; background-position: center; background-size: cover;"></div>
+            </div>
+
+            <!-- Facebook Link -->
+            <div class="contact-layer">
+                <p class="contact-layer-text">
+                    <i>
+                        facebook.com/khalidobaide
+                    </i>
+                </p>
+                <div class="contact-layer-img" style="background: url('../images/facebook.svg'), transparent; background-position: center; background-size: cover;"></div>
+            </div>
+
+            
+            <!-- Youtube Link -->
+            <div class="contact-layer">
+                <p class="contact-layer-text">
+                    <i>
+                        youtube.com/khalidobaide
+                    </i>
+                </p>
+                <div class="contact-layer-img" style="background: url('../images/youtube.svg'), transparent; background-position: center; background-size: cover;"></div>
+            </div>
+                
+        </div>
+        <center class="copy">
+            allright C reserverd and return to khalidobaide 
+        </center>
+        <br><br>
+    </footer>
+
+    <!-- Footer Ends Here -->
+</div>
+
+</body>
+<script>
+    function showMenu(){
+        let menu = document.getElementById('men');
+        let bring = document.getElementById('bring');
+        let close = document.getElementById('close');
+        let cta = document.getElementById('cta');
+
+        bring.addEventListener('click', function(e){
+            menu.style.display = 'block';
+            cta.style.marginLeft = '120px';
+        });
+
+        close.addEventListener('click', function(e){
+            menu.style.display = 'none';
+            cta.style.marginLeft = '0px';
+        });
+    }
+
+    function ShowInForm(){
+        let form = document.getElementById('inForm');
+        let bring = document.getElementById('bringForm');
+        let close = document.getElementById('closeForm');
+
+        bring.addEventListener('click', e=> form.style.display = 'block');
+        close.addEventListener('click', e=> form.style.display = 'none');
+    }
+
+    showMenu();
+    ShowInForm();
+</script>
+</html>
