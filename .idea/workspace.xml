@@ -14,8 +14,13 @@
   <component name="ProjectId" id="1SVYwS59jIdF35byWgYTvT7LbGq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\student lab\Documents\django_darsia\darsia\media" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

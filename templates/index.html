@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+{% block html %}
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
         crossorigin="anonymous">
-    </script>   
+    </script>
     <script src="./scripts/app.js"></script>
-    <link rel="shortcut icon" href="./images/small_logo.png">
+    <link rel="shortcut icon" href="images/small_logo.png">
     <link rel="stylesheet" href="styles/index.css" />
     <title>Darsia | Home</title>
 </head>
@@ -18,22 +19,22 @@
 <body>
     <h1 class="not-sup">
         <center>
-            <img src="./images/logo.svg" style="background-color: orange; border-radius : 20px;"/>
+            <img src="images/logo.svg" style="background-color: orange; border-radius : 20px;"/>
         </center>
         <br>
-         آسف ، لكننا لا ندعم الشاشات الصغيرة 
+         آسف ، لكننا لا ندعم الشاشات الصغيرة
          <br>
          أصغر من 320 بكسل
     </h1>
     <div class="all">
     <div class="top-header">
         <div class="top-layer">
-            <img id="bring" src="./images/hum.svg" class="hum-icon" />
-            
+            <img id="bring" src="images/hum.svg" class="hum-icon" />
+
             <ul id="men">
                 <a href="#" id="close"><li class="hide-ul"></li></a>
                 <a href="/"><li class="active">
-                    الصفحة الرئيسية 
+                    الصفحة الرئيسية
                 </li></a>
                 <a href="./pages/login.html"><li class="rest">
                      تسجيل الدخول
@@ -52,7 +53,7 @@
             <a href="./pages/signup.html">
                 <button class="button cta-zero" id="cta">إنشاء الحساب</button>
             </a>
-            <img src="./images/logo.svg" class="top-logo" />
+            <img src="images/logo.svg" class="top-logo" />
             <center class="whats">
                 <p class="what-one">
                     يوجد دائماً من هو أشقى منك
@@ -63,7 +64,7 @@
             </center>
             <form>
                 <input class="search-input" placeholder="ابحث 3,546 من القوائم" dir="rtl" />
-                <img src="./images/searhc-icon.svg" class="search-icon" />
+                <img src="images/searhc-icon.svg" class="search-icon" />
             </form>
         </div>
     </div>
@@ -73,9 +74,9 @@
     </p>
     <center class="why-items">
         <br>
-
+        <img src="../images/clock.svg" />
         <div class="why-item">
-            <img src="./images/self-traingin.svg" />
+            <img src="images/self-traingin.svg" />
             <p class="index-sub-sub-title">
                 تعلم النفسي
             </p>
@@ -86,9 +87,9 @@
 
 
         <div class="why-item">
-            <img src="./images/clock.svg" />
+            <img src="images/clock.svg" />
             <p class="index-sub-sub-title">
-                 الدرس السريع 
+                 الدرس السريع
             </p>
             <p class="des">
                 تخيل لما انت تتعلم بسرعه ما حد يقدر يصلك بك في السرعه و الكيفيه و هذه هي العمل اللي احنا نعمله
@@ -96,7 +97,7 @@
         </div>
 
         <div class="why-item">
-            <img src="./images/personalized.svg" />
+            <img src="images/personalized.svg" />
             <p class="index-sub-sub-title">
                 التعلم الشخصي
             </p>
@@ -117,7 +118,7 @@
     <center>
 
 
-    <div class="card-container" style="background: url('./images/drawing.jpg'), #C4C4C4; background-position: center; background-size: cover;">
+    <div class="card-container" style="background: url('images/drawing.jpg'), #C4C4C4; background-position: center; background-size: cover;">
         <div class="card-filter">
             <p class="card-title">
                     رسم تعليمي للمبتدئين
@@ -127,11 +128,11 @@
                       خالد العبيدي
                 </p>
                 <div class="card-star-holder">
-                    <img src="./images/non-stared.svg" class="non-stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
+                    <img src="images/non-stared.svg" class="non-stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
                 </div>
                 <p class="card-students">
                     3,304
@@ -146,29 +147,29 @@
                            $53.26
                        </lp>
                        <div class="card-lined">
-        
+
                        </div>
                    </div>
                </a>
         </div>
-    </div> 
+    </div>
 
-    <div class="card-container" style="background: url('./images/gaming.jpg'), #C4C4C4; background-position: center; background-size: cover;">
+    <div class="card-container" style="background: url('images/gaming.jpg'), #C4C4C4; background-position: center; background-size: cover;">
             <div class="card-filter">
                 <p class="card-title">
-                     العاب في الوقت الفراغ   
+                     العاب في الوقت الفراغ
                 </p>
                     <p class="card-by">
                         <white>بواسطة:</white>
                           علي رضا
                     </p>
                     <div class="card-star-holder">
-                        <img src="./images/non-stared.svg" class="non-stared"/>
-                        <img src="./images/non-stared.svg" class="non-stared"/>
+                        <img src="images/non-stared.svg" class="non-stared"/>
+                        <img src="images/non-stared.svg" class="non-stared"/>
 
-                        <img src="./images/stared.svg" class="stared"/>
-                        <img src="./images/stared.svg" class="stared"/>
-                        <img src="./images/stared.svg" class="stared"/>
+                        <img src="images/stared.svg" class="stared"/>
+                        <img src="images/stared.svg" class="stared"/>
+                        <img src="images/stared.svg" class="stared"/>
                     </div>
                     <p class="card-students">
                         5,026
@@ -188,7 +189,7 @@
             </div>
     </div>
 
-    <div class="card-container" style="background: url('./images/vr_and_ar.jfif'), #C4C4C4; background-position: center; background-size: cover;">
+    <div class="card-container" style="background: url('images/vr_and_ar.jfif'), #C4C4C4; background-position: center; background-size: cover;">
         <div class="card-filter">
             <p class="card-title">
                  فهم الواقع الافتراضي
@@ -198,12 +199,12 @@
                       احسان كريم
                 </p>
                 <div class="card-star-holder">
-                    <img src="./images/non-stared.svg" class="non-stared"/>
-                    
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
+                    <img src="images/non-stared.svg" class="non-stared"/>
+
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
                 </div>
                 <p class="card-students">
                     876
@@ -223,7 +224,7 @@
         </div>
     </div>
 
-    <div class="card-container" style="background: url('./images/good_laptop.jfif'), #C4C4C4; background-position: center; background-size: cover;">
+    <div class="card-container" style="background: url('images/good_laptop.jfif'), #C4C4C4; background-position: center; background-size: cover;">
         <div class="card-filter">
             <p class="card-title">
                  كود ومفاهيمها تعليمي
@@ -233,12 +234,12 @@
                       خالد العبيدي
                 </p>
                 <div class="card-star-holder">
-                    <img src="./images/non-stared.svg" class="non-stared"/>
-                    
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
-                    <img src="./images/stared.svg" class="stared"/>
+                    <img src="images/non-stared.svg" class="non-stared"/>
+
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
+                    <img src="images/stared.svg" class="stared"/>
                 </div>
                 <p class="card-students">
                     57
@@ -259,7 +260,7 @@
     </div>
 
 
-    </center>   
+    </center>
 
 
     <!-- Cards End Here -->
@@ -272,9 +273,9 @@
     <div class="say-container">
         <br><br>
         <center class="say-items">
-            
+
             <div class="say-card-container">
-                <div class="say-card-img" style="background: url('./images/girl.jfif'), #C4C4C4; background-position: center; background-size: cover;"></div>
+                <div class="say-card-img" style="background: url('images/girl.jfif'), #C4C4C4; background-position: center; background-size: cover;"></div>
                 <name>
                     بارب نايك
                 </name>
@@ -293,9 +294,9 @@
                     </txt>
                 </i>
             </div>
-            
+
             <div class="say-card-container">
-                    <div class="say-card-img" style="background: url('./images/salem.jpeg'), #C4C4C4; background-position: center; background-size: cover;"></div>
+                    <div class="say-card-img" style="background: url('images/salem.jpeg'), #C4C4C4; background-position: center; background-size: cover;"></div>
                     <name>
                         سالم موكي
                     </name>
@@ -316,9 +317,9 @@
             </div>
 
             <div class="say-card-container">
-                    <div class="say-card-img" style="background: url('./images/girl_2.jpg'), #C4C4C4; background-position: center; background-size: cover;"></div>
+                    <div class="say-card-img" style="background: url('images/girl_2.jpg'), #C4C4C4; background-position: center; background-size: cover;"></div>
                     <name>
-                        الية ليلا 
+                        الية ليلا
                     </name>
                     <div class="linep">
                         <div class="lines"></div>
@@ -338,9 +339,9 @@
 
 
             <div class="say-card-container">
-                    <div class="say-card-img" style="background: url('./images/baby.jpg'), #C4C4C4; background-position: center; background-size: cover;"></div>
+                    <div class="say-card-img" style="background: url('/media/baby.jpg'), #C4C4C4; background-position: center; background-size: cover;"></div>
                     <name>
-                         محسن علي 
+                         محسن علي
                     </name>
                     <div class="linep">
                         <div class="lines"></div>
@@ -362,7 +363,7 @@
     </div>
 
 
-    
+
 
 
     <!-- Footer Starts Here -->
@@ -378,7 +379,7 @@
                     <input type="email" placeholder="Email " name="email" class="subscribe-ipt" />
                 </div>
                 <br>
-                <button class="one-cta" type="submit">انضم</button>    
+                <button class="one-cta" type="submit">انضم</button>
             </from>
         </div>
 
@@ -394,7 +395,7 @@
                         hello@darsia.com
                     </i>
                 </p>
-                <div class="contact-layer-img" style="background: url('./images/website.svg'), transparent; background-position: center; background-size: cover;"></div>
+                <div class="contact-layer-img" style="background: url('images/website.svg'), transparent; background-position: center; background-size: cover;"></div>
             </div>
 
             <!-- Facebook Link -->
@@ -404,10 +405,10 @@
                         facebook.com/khalidobaide
                     </i>
                 </p>
-                <div class="contact-layer-img" style="background: url('./images/facebook.svg'), transparent; background-position: center; background-size: cover;"></div>
+                <div class="contact-layer-img" style="background: url('images/facebook.svg'), transparent; background-position: center; background-size: cover;"></div>
             </div>
 
-            
+
             <!-- Youtube Link -->
             <div class="contact-layer">
                 <p class="contact-layer-text">
@@ -415,12 +416,12 @@
                         youtube.com/khalidobaide
                     </i>
                 </p>
-                <div class="contact-layer-img" style="background: url('./images/youtube.svg'), transparent; background-position: center; background-size: cover;"></div>
+                <div class="contact-layer-img" style="background: url('images/youtube.svg'), transparent; background-position: center; background-size: cover;"></div>
             </div>
-                
+
         </div>
         <center class="copy">
-            allright C reserverd and return to khalidobaide 
+            allright C reserverd and return to khalidobaide
         </center>
         <br><br>
     </footer>
@@ -450,3 +451,1093 @@
     showMenu();
 </script>
 </html>
+{% endblock %}
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Scheherazade&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Content&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i&display=swap');
+
+
+html{
+    margin : 0;
+    padding : 0;
+
+}
+.subscribe-ipt-container {
+    margin-right : -24px;
+}
+
+.not-sup{
+    display: none;
+    text-align: right;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    color : black;
+    width : 100%;
+}
+
+
+.copy{
+    color : white;
+    font-size: 15px;
+    font-family : 'Roboto' , sans-serif;
+    position: relative;
+    top : 50px;
+}
+
+
+.top-layer{
+    background: linear-gradient(15deg, rgba(0,0,0,0.5) 0%, rgba(255,0,0,0.5) 100%);
+    width : 100%;
+    height: 100%;
+}
+
+.search-icon{
+    cursor: pointer;
+}
+.inputs-container{
+    background-color: transparent;
+    width : 75%;
+    max-width: 450px;
+    height: auto;
+    margin-top : 10%;
+    margin-bottom: 10%;
+    position: relative;
+    left : 50%;
+    transform: translate(-50%, 0);
+    text-align: right;
+}
+
+
+.inputs-header{
+    font-weight: bold;
+    text-align: right;
+    margin-right: 8px;
+}
+
+.sub-inputs-container{
+    background-color: #EDEDED;
+    -webkit-box-shadow: 7px 9px 5px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 7px 9px 5px rgba(0, 0, 0, 0.17);
+    box-shadow: 7px 9px 5px rgba(0, 0, 0, 0.17);
+    margin-top : 10px;
+    width : 100%;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.self-input-container{
+    background-color: transparent;
+    width : 90%;
+    text-align: right;
+    margin-left : 5%;
+    margin-top : 20px;
+    margin-bottom: 10px;
+}
+
+.self-input-container-header{
+    margin-bottom: 3px;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.self-input-grid{
+    background-color: white;
+    width : 100%;
+    height: 40px;
+    margin-bottom: 2px;
+    border : none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 4% auto;
+}
+
+
+.self-input{
+    outline : none;
+    border : none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+.sub-and-lable-container{
+    background-color: transparent;
+    width : 90%;
+    height: 40px;
+    position: relative;
+    left : 5%;
+    right : 5%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.submit-btn {
+    font-size: 20px;
+    color : white;
+    background-color : #5AEB83;
+    border : none;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit-btn:hover{
+
+    opacity : 0.6;
+}
+
+.lable{
+    position: relative;
+    top : 0px;
+    text-align : right;
+    font-size: 22px; /* make it 16b on phone */
+    color : blue;
+}
+.subs-placer{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-sub-sub{
+    margin-top : -25px;
+}
+
+.sub-sub-sub-title{
+    font-size : 24px;
+    width : 60%;
+    text-align: right;
+    position: relative;
+    left : 30%;
+}
+.user-data{
+
+    position: relative;
+    top : 40px;
+
+    color : white;
+}
+
+
+.money-container{
+    width : 80%;
+    height: 60px;
+    background: red;
+    color : white;
+    position: relative;
+    left : 50%;
+    transform: translate(-50%, 0);
+    margin-top : 30px;
+    border : none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 150px auto 30px;
+    cursor: pointer;
+}
+.money-container:hover{
+    opacity: 0.2;
+}
+
+.money-ammount {
+    background-color: transparent;
+    position: relative;
+    top :-13px;
+    transform: translate(0, -13px);
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0px 4px 4px #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.money-text{
+    text-align: right;
+    font-size : 24px;
+    position: relative;
+    top : -7px;
+    transform: translate(0, -7px);
+}
+
+
+.charge-container{
+    width : 80%;
+    height: 60px;
+    color : white;
+    position: relative;
+    left : 50%;
+    transform: translate(-50%, 0);
+    margin-top : 30px;
+    border : 1px solid #5AEB83;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 130px 10px auto;
+}
+
+.charge-ipt{
+    border : none;
+    outline : none;
+    font-size: 24px;
+    width : 100%;
+    border-radius: 10px;
+}
+
+.charge-btn{
+    border : none;
+    border-radius: 10px;
+    background-color : #5AEB83;
+    color : white;
+    outline : none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align : center;
+}
+.charge-btn:hover{
+    opacity: 0.2;
+}
+
+.user-name{
+    margin-right: 10%;
+}
+
+
+.user-des{
+    background-color: transparent;
+    font-size: 22px;
+    color : rgb(98, 98, 98);
+    width : 60%;
+    text-align : right;
+    margin-right: 10%;
+    position: relative;
+    right : -30%;
+}
+
+.user-img {
+    margin-left : 20px;
+    margin-bottom: -180px;
+    position: relative;
+    top : -100px;
+    border-radius: 50px;
+    width : 100px;
+    height: 100px;
+}
+
+
+.update-btn{
+    width : 100px;
+    height: 40px;
+    margin-left: 20px;
+    color : white;
+    background-color : #5AEB83;
+    border : none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 20px;
+    outline : none;
+}
+.update-btn:hover{
+    opacity : 0.2;
+}
+
+.in-form-container{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width : 100%;
+
+}
+
+
+.self-text-input{
+    height: 100px;
+    width : 100%;
+    resize : none;
+    margin-bottom: -10px;
+    border : none;
+    border-radius: 10px;
+    font-size : 20px;
+    outline : none;
+    text-align: right;
+
+}
+.course-cta{
+    background-color: red;
+    width : 20%;
+    min-width: 160px;
+    text-align: center;
+    margin-top : -200px;
+    height: 60px;
+    color : white;
+    display: grid;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 600px;
+    cursor: pointer;
+}
+.course-cta:hover{
+    opacity: 0.2;
+}
+
+.sub-tree-title{
+    font-size: 20px;
+    margin-right : 70px;
+    text-align : right;
+    margin-top : 5px;
+    margin-bottom: -15px;
+}
+/* not supporting screens */
+@media screen and (max-width: 319px) {
+    .all{
+        opacity: 0;
+    }
+    .not-sup {
+        display: block;
+    }
+}
+
+
+
+/* starting for bigger screens simple phones */
+@media screen and (min-width: 320px) {
+
+    .sub-sub-sub-title{
+        font-size : 24px;
+        width : 70%;
+        text-align: right;
+        position: relative;
+        left : 20%;
+    }
+    body{
+        margin : 0;
+        padding : 0;
+        font-family: 'Scheherazade', serif;
+    }
+
+    .top-header{
+        background: linear-gradient(203.25deg, rgba(138, 0, 0, 0.78) -15.43%, rgba(0, 0, 0, 0.28) 102.88%), url(images/library.jpg);    width: 100%;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .intro-top-header{
+        margin-bottom: 40px;
+        border : none;
+        outline : none;
+        height: 500px;
+        width : 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hum-icon{
+        margin-top : 13px;
+        margin-left : 8px;
+    }
+    .button {
+        position: relative;
+        top : -2px;
+        left : 6px;
+    }
+
+    .cta-zero {
+        width : auto;
+        height: 25px;
+        background-color : #5AEB83;
+        border : none;
+        border-radius: 5px;
+        outline: none;
+        white-space: nowrap;
+        margin-left : 0px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    .top-logo {
+        width : 80px;
+        height : 35px;
+        position: absolute;
+        right : 8px;
+        top : 5px;
+    }
+
+    .what-one{
+        color : white;
+        font-size: 30px; /* change this when screen is bigger */
+
+        position: absolute;
+        top : 140px;
+        right : 8px;
+        transform: translate(-8px, -0);
+    }
+
+    .what-two{
+        font-family: 'Vibes', cursive;
+        color : #5AEB83;
+        position: absolute;
+        font-size: 80px;
+        top : 30px; /* 10px for iphone 5/se */
+        right : 25%;
+        transform: translate(-25%, -22%);
+    }
+
+    .search-input{
+        position: absolute;
+        top : 318px;
+        left : 50%;
+        transform: translate(-50%, -50%);
+        background-color : white;
+        color : black;
+        width : 90%;
+        height: 55px;
+        border : none;
+        border-radius: 8px;
+        outline : none;
+        font-size: 24px;
+        padding-right: 20px;
+        font-weight: lighter;
+    }
+
+    .search-icon {
+        position: absolute;
+        top : 318px;
+        left : 7%;
+        transform: translate(-7%, -48%);
+    }
+
+    .sub-title {
+        font-size: 64px;
+        margin-top  : -40px;
+        margin-bottom: -40px;
+        margin-right : 8px;
+        text-align: right;
+    }
+
+    .sub-sub-title{
+        font-size: 40px;
+        margin-top  : -25px;
+        margin-bottom: -25px;
+        text-align: right;
+    }
+    .index-sub-sub-title{
+        font-size: 40px;
+        margin-top  : -25px;
+        margin-bottom: -25px;
+        text-align: center;
+    }
+
+    .des {
+        font-size: 20px;
+        margin-top : 15px;
+        margin-bottom: -25px;
+    }
+    .why-item{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-right: 10px;
+        margin-left : 10px;
+        display: inline-block;
+        width : 280px;
+    }
+
+    .why-item {
+        vertical-align: top;
+    }
+
+    white{
+        color : white;
+    }
+
+    .card-container {
+        height: 250px;
+        width : 203px;
+        display: inline-block;
+        margin-left : 10px;
+        margin-right : 10px;
+        border : none;
+        border-radius: 20px;
+        margin-bottom : 20px;
+        margin-top : 10px;
+        color : white;
+
+
+        -webkit-box-shadow: 6px 6px 15px 2px rgba(184,184,184,1);
+        -moz-box-shadow: 6px 6px 15px 2px rgba(184,184,184,1);
+        box-shadow: 6px 6px 15px 2px rgba(184,184,184,1);
+    }
+
+    .card-filter{
+        width : 100%;
+        height : 100%;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        top : 0%;
+        left : 0%;
+    }
+
+    .card-title {
+        font-size: 40px;
+        text-align: right;
+        margin-right : 20px;
+        line-height: 40px;
+        margin-top : -0px;
+        margin-bottom: -15px;
+    }
+
+    .card-by {
+        font-size: 23px;
+        color : #A0A0A0;
+        text-align : right;
+        margin-right : 20px;
+    }
+
+    .stared , .non-stared{
+        width : 13px;
+        height: 13px;
+    }
+
+    .card-star-holder {
+        text-align : right;
+        margin-right: 20px;
+        margin-top : -25px;
+    }
+
+    .card-students {
+        color : #A0A0A0;
+        font-size: 23px;
+        text-align: right;
+        margin-right: 20px;
+        margin-top : -5px;
+    }
+
+    .card-button {
+        width : 157px;
+        height : 40px;
+        background-color: red;
+        color : white;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top : -15px;
+    }
+
+    .card-button:hover{
+        opacity: 0.5;
+    }
+
+    cp {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 4px #000000, 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        position: absolute;
+        top : 202px;
+        left : 40px;
+        text-align : center;
+    }
+
+    lp{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #FFFFFF;
+
+        position: absolute;
+        top : 208px;
+        left : 120px;
+        text-align: center;
+    }
+
+    .card-lined{
+        width : 58px;
+        height : 1px;
+        background-color : #000;
+        position: absolute;
+        top : 215px;
+        left : 113px;
+        text-align: center;
+
+    }
+
+    .say-card-container{
+        width : 295px;
+        height : auto;
+        background-color : transparent;
+        margin-bottom: 0px;
+        display: inline-block;
+        margin-right : 25px;
+        margin-left : 25px;
+        vertical-align: top;
+    }
+
+    .say-card-img{
+        width : 80px;
+        height : 80px;
+        background-color : #A0A0A0;
+        border-radius: 40px;
+        position: relative;
+        right : calc(-315px / 2 + 40px);
+    }
+
+
+    name{
+        background-color : transparent;
+        font-size: 28px;
+        color : #9F9F9F;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        top : -35px;
+    }
+
+    .linep{
+        width : 100%;
+        height : 1px;
+        background-color : transparent;
+        position: relative;
+        top : -40px;
+        margin-bottom : 35px;
+        display: grid;
+        grid-template-columns: 3% 2% 15% 2% 78%;
+    }
+
+    .lines{
+        height : 100%;
+        background-color : red;
+    }
+    .line-md{
+        height: 100%;
+        background-color: transparent;
+    }
+
+    txt{
+        position: relative;
+        top : -55px;
+        font-size: 24px;
+    }
+
+    .txt-p {
+        text-align: right;
+        margin-top : -15px;
+        margin-right : 10px;
+    }
+
+
+    .c-white{
+        color : white;
+    }
+
+    .footer-sub-text{
+        margin-right  : 20px;
+    }
+
+    footer{
+        width : 100%;
+        background-color : #363636;
+        text-align : right;
+    }
+    .sub-container{
+        margin-top : 30px;
+        margin-bottom: 1px;
+        background-color: transparent;
+        width : 100%; /* Make it 49.5% when on your desktop media */
+        display: inline-block;
+    }
+
+    .subscribe-ipt-container {
+        border : none;
+        border-radius : 8px;
+        background-color: white ;
+        color : black;
+        width : 300px;
+        height: 40px;
+        display: grid;
+        grid-template-columns: 20px 280px;
+        justify-content: center;
+        margin-top : 20px;
+        position: absolute;
+        right : 40px;
+    }
+
+    .subscribe-ipt {
+        border : none;
+        font-size: 20px;
+        outline : none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .one-cta{
+        background-color : red;
+        width : 120px;
+        height: 40px;
+        border : none;
+        border-radius: 8px;
+        color : white;
+        font-size: 30px;
+        margin-top : 40px;
+        margin-right: 220px;
+        text-align: center;
+        outline : none;
+        cursor: pointer;
+    }
+    .one-cta:hover{
+        opacity : 0.5;
+    }
+
+    .contact-layer {
+        background-color : transparent;
+        width : 300px;
+        height : 27px;
+        margin-top : 30px;
+        position: relative;
+        margin-left : 100%;
+        right : 350px;
+        display: grid;
+        grid-template-columns: 273px 27px;
+        margin-bottom: -20px;
+    }
+
+    .contact-layer-img{
+        background-color: transparent;
+        height: 100%;
+        margin-top : -5px;
+    }
+
+    .contact-layer-text{
+        background-color: transparent;
+        height: 100%;
+        margin-top : -5px;
+        margin-bottom: 3px;
+        justify-content: center;
+        vertical-align: center;
+        text-align: center;
+
+        font-family: 'Roboto', sans-serif;;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+
+        color: #FFFFFF;
+    }
+
+    .self-input-container-header{
+        margin-bottom: 2px;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+    .lable{
+        position: relative;
+        top : 14px;
+        text-align : right;
+        font-size: 13px; /* make it 16b on phone */
+        color : blue;
+    }
+
+
+    .self-input{
+        font-size: 15px;
+    }
+
+    .user-data{
+
+        position: relative;
+        top : 0px;
+
+        color : white;
+    }
+
+    .hide-ul {
+        position: absolute;
+        top : 0px;
+        left : 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .sub-sub-sub-title{
+        font-size : 24px;
+        width : 60%;
+        text-align: right;
+        position: relative;
+        left : 30%;
+    }
+    .user-data{
+
+        position: relative;
+        top : 40px;
+
+        color : white;
+    }
+
+    .self-input{
+        font-size: 20px;
+    }
+    .lable{
+        position: relative;
+        top : 0px;
+        text-align : right;
+        font-size: 22px; /* make it 16b on phone */
+        color : blue;
+    }
+
+
+    .sub-container{
+        width : 49%;
+    }
+    .subscribe-ipt-container{
+        position: relative;
+        right : -20px;
+    }
+
+    .one-cta  {
+        margin-top : -20px;
+        position: absolute;
+        left : 3.1%;
+    }
+
+    .subscribe-text{
+        margin-top : -40px;
+        position: absolute;
+        left : 26%;
+    }
+
+
+
+}
+
+/* only for iphone 5/se */
+@media screen and (max-height: 568px) {
+    .all{
+        margin-right : -24px;
+    }
+    .top-logo{
+        margin-right : -24px;
+    }
+
+    .what-two {
+        top : 5px;
+    }
+
+    .what-one{
+        top : 110px;
+    }
+
+    .self-input-grid{
+        background-color: white;
+        width : 100%;
+        height: 40px;
+        margin-bottom: 2px;
+        border : none;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 4% 90%;
+    }
+}
+
+
+ul{
+    display: none;
+    background-color : red;
+    color : white;
+    width : 120px;
+    height: 100%;
+    position: fixed;
+    top : -16px;
+    z-index: 1;
+}
+
+.hide-ul{
+    background: url('images/x.svg'), transparent;
+    background-position: center;
+    background-size: cover;
+    width : 20px;
+    height: 20px;
+    margin-top : 10px;
+    margin-bottom: 40px;
+    position: relative;
+    left : -30px;
+}
+
+li:not(.hide-ul){
+    list-style-type: none;
+    text-align: center;
+    margin-left : -40px;
+    border : none;
+    margin-bottom: -2px;
+    font-size: 30px;
+
+}
+.rest{
+    background-color : #5AEB83;
+    color : white;
+    text-decoration: none;
+}
+.active{
+    background-color: orange;
+    color : white;
+    margin-bottom: -2px;
+}
+a{
+    text-decoration: none;
+}
+
+li:hover{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.cta-zero:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.intro-top{
+    background-color : Red;
+    position: absolute;
+    top : 20px;
+}
+
+
+@media screen and (min-width : 630px){
+
+    .self-input-container-header{
+        margin-bottom: 3px;
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    ul{
+        display: inline-block;
+        background-color : transparent;
+        color : white;
+        width : auto;
+        position: relative !important;
+        height: 40px;
+        left : -50px;
+    }
+    .hum-icon{
+        display: none;
+    }
+    .hide-ul{
+        display: none;
+    }
+
+    li:not(.hide-ul){
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        border : none;
+        font-size: 24px;
+        margin-left : 20px;
+
+    }
+    .rest{
+        background-color : transparent;
+        color : white;
+        text-decoration: none;
+
+    }
+    .active{
+        background-color: transparent;
+        opacity: 1;
+        color : white;
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+
+    li:hover{
+        opacity: 0.2;
+        cursor: pointer;
+    }
+
+    .cta-zero{
+
+        position: relative;
+        top : -13px;
+        left : -40px;
+    }
+
+
+
+    /*whats resizer */
+    .what-one {
+        right : 10%;
+        font-size: 50px;
+    }
+
+    .what-two {
+        font-size: 150px;
+        top : -70px;
+        right : 250px;
+    }
+
+
+    /*search resizer*/
+    .search-input, .search-icon{
+        margin-top: 50px;
+    }
+
+
+    /* background image */
+    .top-header{
+        background-image: url('images/spiderman_learning.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat : no-repeat;
+    }
+
+
+    .intro-top-header{
+        margin-bottom: 40px;
+        border : none;
+        outline : none;
+        width : 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat : no-repeat;
+    }
+}
+
+</style>
