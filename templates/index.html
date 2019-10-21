@@ -82,7 +82,9 @@
                 {{why_darsia.title}}
             </p>
             <p class="des">
-                {{why_darsia.bio | linebreaks  }}
+                {% autoescape off %}
+                    {{ why_darsia.bio }}
+                {% endautoescape %}
             </p>
         </div>
         {% endfor %}
