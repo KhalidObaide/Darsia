@@ -357,7 +357,8 @@
             <p class="sub-sub-title c-white footer-sub-text subscribe-text">
                 :الإشتراك
             </p>
-            <from>
+            <from method="post">
+                {% csrf_token %}
                 <div class="subscribe-ipt-container">
                     <div></div>
                     <input type="email" placeholder="Email " name="email" class="subscribe-ipt" />

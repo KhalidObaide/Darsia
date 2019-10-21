@@ -128,3 +128,13 @@ class Why_darsia(models.Model):
     def __str__(self):
         return self.title
 
+
+class Subscriber(models.Model):
+    email = models.CharField(max_length=999999)
+    time_created = models.CharField(max_length=999999)
+    status = models.CharField(max_length=999999)
+    is_user = models.CharField(max_length=999999)
+
+    def __str__(self):
+        return self.email
+
