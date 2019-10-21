@@ -74,37 +74,19 @@
     </p>
     <center class="why-items">
         <br>
-        <img src="../images/clock.svg" />
+
+        {% for why_darsia in all_why_darsias %}
         <div class="why-item">
-            <img src="images/self-traingin.svg" />
+            <img src="{{why_darsia.img}}" />
             <p class="index-sub-sub-title">
-                تعلم النفسي
+                {{why_darsia.title}}
             </p>
             <p class="des">
-                 مع تعلم النفسي انت قادر علي التعليم كثير من اللغات فهذه حلو ابداء الان حتى ما يتم الوقت الكل دار هذه من قب ف ياللله اسرع ما في وقت
+                {{why_darsia.bio | linebreaks  }}
             </p>
         </div>
+        {% endfor %}
 
-
-        <div class="why-item">
-            <img src="images/clock.svg" />
-            <p class="index-sub-sub-title">
-                 الدرس السريع
-            </p>
-            <p class="des">
-                تخيل لما انت تتعلم بسرعه ما حد يقدر يصلك بك في السرعه و الكيفيه و هذه هي العمل اللي احنا نعمله
-            </p>
-        </div>
-
-        <div class="why-item">
-            <img src="images/personalized.svg" />
-            <p class="index-sub-sub-title">
-                التعلم الشخصي
-            </p>
-            <p class="des">
-                فانت تبي العلم بنفسك فقط افضل مكان جئت حياك الله حسادتك حلو كذا كن خسيس و ما تعطي اي واحد اي شي انت حلو و الناس كمان حلو ف اخيرا كن خسيسا مثل ما كنت س
-            </p>
-        </div>
     </center>
     <br><br><br>
 

@@ -116,3 +116,15 @@ class Bank(models.Model):
 
     def __str__(self):
         return self.bank_name
+
+
+class Why_darsia(models.Model):
+    title = models.CharField(max_length=99999)
+    bio = models.TextField(max_length=999999)
+    img = models.CharField(max_length=99999)
+    time_added = models.CharField(max_length=99999)
+    status = models.CharField(max_length=99999)
+
+    def __str__(self):
+        return self.title
+
