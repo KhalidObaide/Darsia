@@ -30,6 +30,18 @@ class User(models.Model):
         return self.username
 
 
+class Timed_User(models.Model):
+    name = models.CharField(max_length=999999)
+    username = models.CharField(max_length=9999999)
+    email = models.CharField(max_length=999999)
+    password = models.CharField(max_length=999999)
+    time_created = models.CharField(max_length=999999)
+    url = models.CharField(max_length=9999999)
+
+    def __str__(self):
+        return self.name
+
+
 class Teacher(models.Model):
     name = models.CharField(max_length=999999)
     username = models.CharField(max_length=999999)
@@ -94,7 +106,7 @@ class Video(models.Model):
 
 class Review(models.Model):
     user = models.CharField(max_length=99999)
-    bio = models.CharField(max_length=99999)
+    bio = models.TextField(max_length=99999)
     time_added = models.CharField(max_length=99999)
     user_img = models.CharField(max_length=99999)
     status = models.CharField(max_length=99999)
@@ -138,3 +150,18 @@ class Subscriber(models.Model):
     def __str__(self):
         return self.email
 
+
+class Url(models.Model):
+    name = models.CharField(max_length=9999999)
+    url = models.CharField(max_length=9999999)
+
+    def __str__(self):
+        return self.name
+
+
+class Simple_Data(models.Model):
+    name = models.CharField(max_length=9999999)
+    data = models.CharField(max_length=9999999)
+
+    def __str__(self):
+        return self.name

@@ -5,9 +5,6 @@ urlpatterns = [
     # darsia.com/ar/
     path('ar/', include('ar.urls')),
 
-    # darsia.com/
-    path('', include('ar.urls')),
-
     # darsia.com/admin
     path('admin/', admin.site.urls),
 ]

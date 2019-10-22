@@ -1,4 +1,5 @@
-<!DOCTYPE html><!DOCTYPE html>
+{% extends 'index.html' %}
+{% block html %}
 <html lang="en">
 
 <head>
@@ -8,10 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
         integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
         crossorigin="anonymous">
-    </script>   
-    <script src="./scripts/app.js"></script>
-    <link rel="shortcut icon" href="../images/small_logo.png">
-    <link rel="stylesheet" href="../styles/index.css" />
+    </script>
+    <link rel="shortcut icon" href="{{darsia_mini_logo}}">
     <title>Darsia | Home</title>
 </head>
 
@@ -30,19 +29,16 @@
         <div class="top-layer">
             <img id="bring" src="../images/hum.svg" class="hum-icon" />
             
-            <ul id="men" style="margin-top : -20px;">
+            <ul id="men">
                 <a href="#" id="close"><li class="hide-ul"></li></a>
-
-                <a href="#">
-                    <li class="user-data">
-                        <img src="../images/user.svg"/><br>
-                        <p class="sub-sub-sub">
-                           كريم علي 
-                        </p>
-                    </li>
-                </a>
                 <a href="/"><li class="active">
-                    الصفحة الرئيسية 
+                    الصفحة الرئيسية
+                </li></a>
+                <a href="./pages/login.html"><li class="rest">
+                     تسجيل الدخول
+                </li></a>
+                <a href="#"><li class="rest">
+                    معلمون
                 </li></a>
                 <a href="#"><li class="rest">
                     الدورات
@@ -56,7 +52,7 @@
             <a href="/">
                 <button class="button cta-zero" id="cta">استكشف الان</button>
             </a>
-            <img src="../images/logo.svg" class="top-logo" />
+            <img src="{{darsia_logo}}" class="top-logo" />
             <center class="whats">
                 <p class="what-one">
                     يوجد دائماً من هو أشقى منك
@@ -79,12 +75,14 @@
     </p>
     <br><br><br> 
     <div>
-        <div class="user-img" style="background: url('../images/girl.jfif'), #C4C4C4; background-position: center; background-size: cover;"></div>
+        <div class="user-img" style="background: url('{{user.profile_image}}'), #C4C4C4; background-position: center; background-size: cover;"></div>
         <p class="sub-sub-title user-name">
-            سيد خالد 
+            {{user.name}}
         </p>
         <p class="user-des">
-            اسمي خالد عبيدي و انا صانع هذه الموقع نرجو منكم تسجلوو تقيدو من الموقع قبل ما نسكره
+            {% autoescape off %}
+                {{user.bio}}
+            {% endautoescape %}
         </p>
     </div>
 
@@ -337,3 +335,4 @@
     showMenu();
 </script>
 </html>
+{% endblock %}

@@ -1,4 +1,5 @@
-<!DOCTYPE html><!DOCTYPE html>
+{% extends 'index.html' %}
+{% block html %}
 <html lang="en">
 
 <head>
@@ -8,17 +9,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
         integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
         crossorigin="anonymous">
-    </script>   
-    <script src="./scripts/app.js"></script>
-    <link rel="shortcut icon" href="../images/small_logo.png">
-    <link rel="stylesheet" href="../styles/index.css" />
+    </script>
+    <link rel="shortcut icon" href="{{darsia_mini_logo}}">
     <title>Darsia | Home</title>
 </head>
 
 <body>
     <h1 class="not-sup">
         <center>
-            <img src="../images/logo.svg" style="background-color: orange; border-radius : 20px;"/>
+            <img src="{{darsia_logo}}" style="background-color: orange; border-radius : 20px;"/>
         </center>
         <br>
          آسف ، لكننا لا ندعم الشاشات الصغيرة 
@@ -53,7 +52,7 @@
                 <button class="button cta-zero" id="cta">تسجيل الدخول </button>
             </a>
 
-            <img src="../images/logo.svg" class="top-logo" />
+            <img src="{{darsia_logo}}" class="top-logo" />
             <center class="whats">
                 <p class="what-one">
                     يوجد دائماً من هو أشقى منك
@@ -71,7 +70,8 @@
     
 
 
-    <form>
+    <form method="post">
+        {% csrf_token %}
         <div class="inputs-container">
             <p class="sub-sub-title inputs-header">
                 انشاء الحساب
@@ -86,7 +86,7 @@
                     </p>
                     <div class="self-input-grid">
                         <div></div>
-                        <input class="self-input" placeholder="Name" name="name" dir="ltr" type="name" autocomplete="off" />
+                        <input class="self-input" placeholder="الاسم" name="name" dir="rtl" type="name" autocomplete="off" />
                     </div>
                 </div>
 
@@ -119,7 +119,7 @@
                     </p>
                     <div class="self-input-grid">
                         <div></div>
-                        <input class="self-input" placeholder="Confirm Password" name="re-password" dir="ltr" type="password" autocomplete="off"/>
+                        <input class="self-input" placeholder="Confirm Password" name="re_password" dir="ltr" type="password" autocomplete="off"/>
                     </div>
                 </div>
 
@@ -235,3 +235,4 @@
     showMenu();
 </script>
 </html>
+{% endblock %}

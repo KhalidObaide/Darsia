@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     </script>
     <script src="./scripts/app.js"></script>
-    <link rel="shortcut icon" href="images/small_logo.png">
+    <link rel="shortcut icon" href="{{darsia_mini_logo}}">
     <link rel="stylesheet" href="styles/index.css" />
     <title>Darsia | Home</title>
 </head>
@@ -19,7 +19,7 @@
 <body>
     <h1 class="not-sup">
         <center>
-            <img src="images/logo.svg" style="background-color: orange; border-radius : 20px;"/>
+            <img src="{{darsia_logo}}" style="background-color: orange; border-radius : 20px;"/>
         </center>
         <br>
          آسف ، لكننا لا ندعم الشاشات الصغيرة
@@ -50,10 +50,10 @@
                 </li></a>
             </ul>
 
-            <a href="./pages/signup.html">
+            <a href="signup/">
                 <button class="button cta-zero" id="cta">إنشاء الحساب</button>
             </a>
-            <img src="images/logo.svg" class="top-logo" />
+            <img src="{{darsia_logo}}" class="top-logo" />
             <center class="whats">
                 <p class="what-one">
                     يوجد دائماً من هو أشقى منك
@@ -258,10 +258,13 @@
         <br><br>
         <center class="say-items">
 
+
+            {% for review in four_reviews %}
+
             <div class="say-card-container">
-                <div class="say-card-img" style="background: url('images/girl.jfif'), #C4C4C4; background-position: center; background-size: cover;"></div>
+                <div class="say-card-img" style="background: url('{{review.user_img}}'), #C4C4C4; background-position: center; background-size: cover;"></div>
                 <name>
-                    بارب نايك
+                    {{ review.user }}
                 </name>
                 <div class="linep">
                     <div class="lines"></div>
@@ -273,75 +276,17 @@
                 <i>
                     <txt>
                         <p class="txt-p">
-                            .نا راضي عن هذه الموقع بكثير و نبوكم تسجلو و تاخذو منا فايده شكرا من استماعكم انا راضي عن هذه الموقع بكثير و نبوكم تسجلو و تاخذو منا فايده شكرا من استماعكم
+                        {% autoescape off %}
+                            {{ review.bio }}
+                        {% endautoescape %}
                         </p>
                     </txt>
                 </i>
             </div>
 
-            <div class="say-card-container">
-                    <div class="say-card-img" style="background: url('images/salem.jpeg'), #C4C4C4; background-position: center; background-size: cover;"></div>
-                    <name>
-                        سالم موكي
-                    </name>
-                    <div class="linep">
-                        <div class="lines"></div>
-                        <div class="line-md"></div>
-                        <div class="lines"></div>
-                        <div class="line-md"></div>
-                        <div class="lines"></div>
-                    </div>
-                    <i>
-                        <txt>
-                            <p class="txt-p">
-                                .شباب اسمعو مني لو ما سجلتو فخسرتم سجو الان و تاخذو تخفيف بليز كونو عاقلين ما تشوفو حاجة ذي هذذه بعدين
-                            </p>
-                        </txt>
-                    </i>
-            </div>
-
-            <div class="say-card-container">
-                    <div class="say-card-img" style="background: url('images/girl_2.jpg'), #C4C4C4; background-position: center; background-size: cover;"></div>
-                    <name>
-                        الية ليلا
-                    </name>
-                    <div class="linep">
-                        <div class="lines"></div>
-                        <div class="line-md"></div>
-                        <div class="lines"></div>
-                        <div class="line-md"></div>
-                        <div class="lines"></div>
-                    </div>
-                    <i>
-                        <txt>
-                            <p class="txt-p">
-                                .حلو. الموقع حبيتها مو حلو كثير بس يعني لو تاخذوها ما تخسروا فيعني حلو بالكل خصوصا القوائم بالعربي اصل المزقع هي بالعربي فعشان هذه حلو حبيتها
-                            </p>
-                        </txt>
-                    </i>
-            </div>
+            {% endfor %}
 
 
-            <div class="say-card-container">
-                    <div class="say-card-img" style="background: url('/media/baby.jpg'), #C4C4C4; background-position: center; background-size: cover;"></div>
-                    <name>
-                         محسن علي
-                    </name>
-                    <div class="linep">
-                        <div class="lines"></div>
-                        <div class="line-md"></div>
-                        <div class="lines"></div>
-                        <div class="line-md"></div>
-                        <div class="lines"></div>
-                    </div>
-                    <i>
-                        <txt>
-                            <p class="txt-p">
-                            .والله لو تشوفها تضحك بكثير اش الموقع هذه مش كويس ما تاخذها ابدا اش هذه يا خالد
-                            </p>
-                        </txt>
-                    </i>
-            </div>
 
         </center>
     </div>
@@ -357,7 +302,7 @@
             <p class="sub-sub-title c-white footer-sub-text subscribe-text">
                 :الإشتراك
             </p>
-            <from method="post">
+            <form method="post">
                 {% csrf_token %}
                 <div class="subscribe-ipt-container">
                     <div></div>
@@ -365,7 +310,7 @@
                 </div>
                 <br>
                 <button class="one-cta" type="submit">انضم</button>
-            </from>
+            </form>
         </div>
 
         <div class="sub-container">
